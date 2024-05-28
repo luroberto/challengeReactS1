@@ -5,7 +5,7 @@ export const weatherConditions = [
     { condition: "Partly cloudy", imageUrl: "https://images.unsplash.com/photo-1524555259-3e4f9092f97b?q=80&w=2057&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
     { condition: "Cloudy", imageUrl: "https://images.unsplash.com/photo-1532178910-7815d6919875?q=80&w=2448&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
     { condition: "Overcast", imageUrl: "https://images.unsplash.com/photo-1499956827185-0d63ee78a910?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
-    { condition: "Mist", imageUrl: "https://images.unsplash.com/photo-1603794052293-650dbdeef72c?q=80&w=2912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+    { condition: "Mist", imageUrl: "https://images.unsplash.com/photo-1515557798735-dc3bf9004973?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
     { condition: "Patchy rain possible", imageUrl: "https://images.unsplash.com/photo-1493314894560-5c412a56c17c?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
     { condition: "Patchy snow possible", imageUrl: "https://plus.unsplash.com/premium_photo-1711653116222-c88ce0285b83?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
     { condition: "Patchy sleet possible", imageUrl: "https://images.unsplash.com/photo-1575060694482-6a6a49458d38?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
