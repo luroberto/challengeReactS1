@@ -1,11 +1,17 @@
 // material
 import { Refresh } from "@mui/icons-material";
 import { Box, Button, Grid, Tooltip, Typography } from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
 
 /* eslint-disable react/prop-types */
 const WeatherCard = (props) => {
   // desestructuración de la props
   const { cityWeather, refresh } = props;
+
+  // constantes para manejar los mediaquery
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
   // función que utiliza la prop para volver a llamar el servicio
   const handleRefresh = () => {
@@ -20,11 +26,13 @@ const WeatherCard = (props) => {
             container
             spacing={1}
             justifyContent="center"
-            direction="row"
+            direction={isSmallScreen ? "column" : "row"}
             alignItems="center"
           >
             <Grid item xs={4}>
-              <Typography sx={{ fontSize: '18rem' }}>{cityWeather.temp}°</Typography>
+              <Typography sx={{ fontSize: isSmallScreen ? "10rem" : "18rem" }}>
+                {cityWeather.temp}°
+              </Typography>
             </Grid>
             <Grid
               item
@@ -34,7 +42,7 @@ const WeatherCard = (props) => {
               justifyContent="center"
               alignItems="flex-start"
             >
-              <Box display='flex' alignItems='center'>
+              <Box display="flex" alignItems="center">
                 <Typography variant="h3" p={2}>
                   {cityWeather.city}
                 </Typography>
@@ -52,11 +60,11 @@ const WeatherCard = (props) => {
                 Dia: {cityWeather.date}, Hora: {cityWeather.time}
               </Typography>
               <Box p={1}>
-              <Tooltip title="Presione para refrescar la información">
-                <Button onClick={() => handleRefresh()}>
-                  Recargar <Refresh />
-                </Button>
-              </Tooltip>
+                <Tooltip title="Presione para refrescar la información">
+                  <Button onClick={() => handleRefresh()}>
+                    Recargar <Refresh />
+                  </Button>
+                </Tooltip>
               </Box>
             </Grid>
           </Grid>
