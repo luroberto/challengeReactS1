@@ -23,6 +23,22 @@ Currently, two official plugins are available:
 
 - **Compatibilidad**: Vite soporta TypeScript, JSX, CSS preprocessors y otros lenguajes modernos directamente. Esto permite a los desarrolladores usar las herramientas y tecnologías más recientes sin configuraciones adicionales.
 
+### ¿Por qué utilizar Material-UI en tu proyecto de React?
+
+Material-UI (MUI) es una biblioteca de componentes de interfaz de usuario (UI) altamente popular y confiable para React.
+
+**Componentes Listos para Usar**:
+   - MUI ofrece una amplia gama de componentes preconstruidos y personalizables que siguen los principios de diseño de Material Design de Google. Esto permite construir interfaces de usuario atractivas y coherentes rápidamente.
+
+**Alta Personalización**:
+   - Aunque los componentes vienen listos para usar, MUI permite una personalización profunda. Puedes sobrescribir estilos, cambiar el comportamiento y extender componentes según las necesidades específicas de tu proyecto.
+
+**Documentación y Comunidad**:
+   - MUI cuenta con una documentación extensa y detallada, así como con una gran comunidad activa. Esto facilita encontrar soluciones a problemas, aprender mejores prácticas y recibir soporte.
+
+Utilizar Material-UI permite construir aplicaciones modernas y atractivas de manera rápida y eficiente, con una sólida base de componentes, excelentes capacidades de personalización y una comunidad de soporte robusta.
+
+
 ## Reglas del challenge
 
 - [ ] Utilizar alguna API pública a elección que brinde esta información: Clima y Hora (no hay problema en usar más de 1 API si no encuentras toda la información en la misma).
