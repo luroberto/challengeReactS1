@@ -34,7 +34,7 @@ function App() {
     city: response.location.name,
     country:
       response.location.region + ", " + response.location.country,
-    temp: response.current.temp_c,
+    temp:  Math.round(response.current.temp_c),
     condition: response.current.condition.code,
     icon: response.current.condition.icon,
     conditionText: response.current.condition.text,
@@ -88,7 +88,7 @@ function App() {
   };
 
   return (
-    <div id="root" style={cityWeather ? getBackgroundStyle(cityWeather.conditionText) : null}>
+    <div id="root" style={cityWeather ? getBackgroundStyle(cityWeather.conditionText) : null} className="backgroundImage">
       <Box p={2} className='container'>
         <Box display="flex" justifyContent="center" alignItems="center">
           {/* se obtiene la ciudad seleccionada en el SearchComponent */}
