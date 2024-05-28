@@ -57,7 +57,7 @@ const WeatherCard = (props) => {
                 {cityWeather.country}
               </Typography>
               <Typography variant="h5" pl={2}>
-                Dia: {cityWeather.date}, Hora: {cityWeather.time}
+                Dia: {cityWeather.date} Hora: {cityWeather.time}
               </Typography>
               <Box p={1}>
                 <Tooltip title="Presione para refrescar la información">
