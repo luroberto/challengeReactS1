@@ -54,7 +54,7 @@ const SearchComponent = (props) => {
           id="combo-box-demo"
           options={cityOptions}
           sx={{ width: 300 }}
-          renderInput={(params) => <TextField {...params} label="Ciudad" variant="standard" />}
+          renderInput={(params) => <TextField {...params} label="Busque una ciudad" variant="standard" />}
         />
       )}
     </Box>
