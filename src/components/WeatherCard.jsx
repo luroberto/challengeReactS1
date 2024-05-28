@@ -24,10 +24,7 @@ const WeatherCard = (props) => {
             alignItems="center"
           >
             <Grid item xs={4}>
-              <Typography variant="h1">{cityWeather.temp}°</Typography>
-              <Typography variant="h5">
-                <span>{cityWeather.conditionText}</span>
-              </Typography>
+              <Typography sx={{ fontSize: '18rem' }}>{cityWeather.temp}°</Typography>
             </Grid>
             <Grid
               item
@@ -45,17 +42,22 @@ const WeatherCard = (props) => {
                   <img src={cityWeather.icon} alt={cityWeather.conditionText} />
                 </Typography>
               </Box>
-              <Typography variant="h4" p={2}>
+              <Typography variant="h5" pl={2}>
+                <span>{cityWeather.conditionText}</span>
+              </Typography>
+              <Typography variant="h4" pl={2}>
                 {cityWeather.country}
               </Typography>
-              <Typography variant="h5" p={2}>
+              <Typography variant="h5" pl={2}>
                 Dia: {cityWeather.date}, Hora: {cityWeather.time}
               </Typography>
+              <Box p={1}>
               <Tooltip title="Presione para refrescar la información">
                 <Button onClick={() => handleRefresh()}>
                   Recargar <Refresh />
                 </Button>
               </Tooltip>
+              </Box>
             </Grid>
           </Grid>
         </>
