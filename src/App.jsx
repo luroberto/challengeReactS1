@@ -22,6 +22,27 @@ function App() {
     getCityWeatherService();
   }, [city]);
 
+  const createCityWeather = (response) => {
+    // formateo de fecha y hora
+    const [datePart, timePart] = response.location.localtime.split(" ");
+    const [year, month, day] = datePart.split("-");
+    let [hour, minute] = timePart.split(":");
+    const formattedDate = `${day}/${month}/${year}`; // dd/mm//yy
+    const formattedTime = `${hour}:${minute} hs`; // hh:mm
+  // se creo un objeto con la información relevante para el componente WeatherCard
+  setCityWeather({
+    city: response.location.name,
+    country:
+      response.location.region + ", " + response.location.country,
+    temp: response.current.temp_c,
+    condition: response.current.condition.code,
+    icon: response.current.condition.icon,
+    conditionText: response.current.condition.text,
+    date: formattedDate,
+    time: formattedTime,
+  });
+  }
+
   const getCityWeatherService = () => {
     if (city) {
       getCityWeather(city)
@@ -32,24 +53,8 @@ function App() {
           } else {
             // resetea el estado del error
             setError(null);
-            // formateo de fecha y hora
-              const [datePart, timePart] = response.location.localtime.split(" ");
-              const [year, month, day] = datePart.split("-");
-              let [hour, minute] = timePart.split(":");
-              const formattedDate = `${day}/${month}/${year}`; // dd/mm//yy
-              const formattedTime = `${hour}:${minute} hs`; // hh:mm
-            // se creo un objeto con la información relevante para el componente WeatherCard
-            setCityWeather({
-              city: response.location.name,
-              country:
-                response.location.region + ", " + response.location.country,
-              temp: response.current.temp_c,
-              condition: response.current.condition.code,
-              icon: response.current.condition.icon,
-              conditionText: response.current.condition.text,
-              date: formattedDate,
-              time: formattedTime,
-            });
+            // crea el objeto cityWeather y actualiza su estado
+            createCityWeather(response)
           }
         })
         .catch((error) => {
