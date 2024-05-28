@@ -23,14 +23,14 @@ Currently, two official plugins are available:
 
 - **Compatibilidad**: Vite soporta TypeScript, JSX, CSS preprocessors y otros lenguajes modernos directamente. Esto permite a los desarrolladores usar las herramientas y tecnologías más recientes sin configuraciones adicionales.
 
-## Reglas
+## Reglas del challenge
 
-- Utilizar alguna API pública a elección que brinde esta información: Clima y Hora (no hay problema en usar más de 1 API si no encuentras toda la información en la misma).
-- Se deberá mostrar en forma de tarjeta con la posibilidad de actualizar los datos mediante un botón o de la manera que te parezca se resuelva mejor.
-- Se podrá utilizar cualquier librería, pero se deberá justificar su uso.
-- Incluir control de errores ante posibles errores de las APIs que utilices.
-- Debe incluir notas y comentarios en el código para entender su funcionamiento y decisiones tomadas.
-- El código se puede enviar por este correo o mediante GitHub.
+- [ ] Utilizar alguna API pública a elección que brinde esta información: Clima y Hora (no hay problema en usar más de 1 API si no encuentras toda la información en la misma).
+- [ ] Se deberá mostrar en forma de tarjeta con la posibilidad de actualizar los datos mediante un botón o de la manera que te parezca se resuelva mejor.
+- [ ] Se podrá utilizar cualquier librería, pero se deberá justificar su uso.
+- [ ] Incluir control de errores ante posibles errores de las APIs que utilices.
+- [ ] Debe incluir notas y comentarios en el código para entender su funcionamiento y decisiones tomadas.
+- [ ] El código se puede enviar por este correo o mediante GitHub.
 
 La API de clima utilizada para desarrollar el challenge fue [https://www.weatherapi.com/](https://www.weatherapi.com/).
 
