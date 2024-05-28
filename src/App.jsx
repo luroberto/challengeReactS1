@@ -97,7 +97,7 @@ function App() {
         <Box>
           {/* se envía el objeto con los datos del clima de la ciudad */}
           {/* se obtiene la función refresh para volver a llamar el servicio  */}
-          <WeatherCard cityWeather={cityWeather} refresh={refresh} />
+          {error ? '': <WeatherCard cityWeather={cityWeather} refresh={refresh} />}
         </Box>
         {error && <ErrorAlert message={error} />}
       </Box>
