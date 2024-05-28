@@ -11,3 +11,8 @@
 img {
   width: 120px;
 }
+
+.container {
+  background-color: black;
+  opacity: 0.5;
+}

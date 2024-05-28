@@ -1,3 +1,4 @@
+// array con las imágenes que machean con la condición climática para utilizar de background
 export const weatherConditions = [
     { condition: "Sunny", imageUrl: "https://images.unsplash.com/photo-1604228741406-3faa38f4907a?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
     { condition: "Clear", imageUrl: "https://images.unsplash.com/photo-1596371609647-4333d9d26f04?q=80&w=3008&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },

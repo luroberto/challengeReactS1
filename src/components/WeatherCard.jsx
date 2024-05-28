@@ -1,13 +1,17 @@
+// material
 import { Refresh } from "@mui/icons-material";
 import { Box, Button, Grid, Tooltip, Typography } from "@mui/material";
 
 /* eslint-disable react/prop-types */
 const WeatherCard = (props) => {
-  const { cityWeather, refresh } = props; // desestructuración de props
+  // desestructuración de la props
+  const { cityWeather, refresh } = props;
 
+  // función que utiliza la prop para volver a llamar el servicio
   const handleRefresh = () => {
     refresh();
   };
+
   return (
     <>
       {cityWeather ? (
@@ -20,9 +24,6 @@ const WeatherCard = (props) => {
             alignItems="center"
           >
             <Grid item xs={4}>
-              {/* <Typography variant="h1">
-                <img src={cityWeather.icon} alt={cityWeather.conditionText} />
-              </Typography> */}
               <Typography variant="h1">{cityWeather.temp}°</Typography>
               <Typography variant="h5">
                 <span>{cityWeather.conditionText}</span>

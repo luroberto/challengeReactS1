@@ -1,3 +1,4 @@
+// Array con lista de las principales ciudades del mundo
 export const cityOptions = [
     { label: 'Ámsterdam', id: 'amsterdam' },
     { label: 'Atenas', id: 'athens' },

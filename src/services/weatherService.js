@@ -1,7 +1,9 @@
+// importación de variables de entorno
 const URL_API = import.meta.env.VITE_API_URL;
 const API_KEY = import.meta.env.VITE_API_KEY;
 
 const getCityWeather = async (city) => {
+    // construcción de url de consulta a la api
     const url = `${URL_API}?key=${API_KEY}&q=${city}`
     try {
         const response = await fetch(url)
